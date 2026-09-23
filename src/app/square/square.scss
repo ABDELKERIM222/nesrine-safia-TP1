@@ -1,0 +1,50 @@
+.form-square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.square{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+.square-orange{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #F25022;
+    height: 195px;
+    width: 195px;
+}
+
+.square-green{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #7FBA00;
+    height: 195px;
+    width: 195px;
+}
+
+.square-blue{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #00A4EF;
+    height: 195px;
+    width: 195px;
+}
+
+.square-yellow{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #FFB900;
+    height: 195px;
+    width: 195px;
+}

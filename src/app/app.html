@@ -1,31 +1,14 @@
 <html>
+    <body>
     <header class="header">
         Nesrine HAJJEM, Safia ABDELKERIM
     </header>
-    <main>
-    
-        <div class="form-square">
-            <div class="square">
-                <div>
-                    <div class="square-orange">
-                        
-                    </div>
-                    <div class="square-green">
-                        
-                    </div>
-                </div>
-                <div>
-                    <div class="square-blue">
-                        
-                    </div>
-                    <div class="square-yellow">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+    <main [style.backgroundColor]="selectedColor">
+    <app-square (colorSelected)="handleColorSelected($event)"> </app-square>
+       
     </main>
     <footer class="footer">
 
     </footer>
+    </body>
 </html>

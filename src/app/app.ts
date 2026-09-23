@@ -1,12 +1,15 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { Component } from '@angular/core';
+import { Square } from './square/square';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Square],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('nesrine-safia-TP1');
+  public selectedColor:string = "";
+
+  handleColorSelected(color: string) {
+    this.selectedColor = color;
+  }
 }
